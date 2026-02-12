@@ -1,129 +1,144 @@
+/* RESET DASAR */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #111;
   color: #fff;
   text-align: center;
 }
 
+/* HEADER */
 header {
   padding: 40px 20px;
-  background: #000;
+  background: linear-gradient(90deg, #000, #222);
+}
+
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 h1 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
 p {
   font-size: 18px;
   color: #ccc;
 }
-.services {
-    padding: 40px 20px;
-  }
-  
-  .services h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .services ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .services li {
-    background: #1c1c1c;
-    margin: 10px auto;
-    padding: 15px;
-    max-width: 400px;
-    border-radius: 8px;
-  }
-  .booking {
-    padding: 40px 20px;
-  }
-  
-  .btn-wa {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #25D366;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 30px;
-    font-weight: bold;
-  }
-  
-  .btn-wa:hover {
-    opacity: 0.9;
-  }
-  .gallery {
-    padding: 40px 20px;
-  }
-  
-  .gallery h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  .gallery-grid img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .logo {
-    width: 120px;
-    border-radius: 50%;
-  }
-  body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #111;
-    color: white;
-}
 
-header {
-    background: linear-gradient(90deg, #000, #222);
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 36px;
-    margin: 0;
-    letter-spacing: 2px;
-}
-
+/* SECTION UMUM */
 section {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 50px 20px;
 }
 
-button {
-    background-color: #25D366;
-    border: none;
-    padding: 12px 25px;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
+/* ===== LAYANAN ===== */
+.service-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
-button:hover {
-    background-color: #1ebd5a;
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-          
+.card {
+  background-color: #1c1c1c;
+  padding: 25px;
+  width: 230px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #25D366;
+}
+
+/* ===== GALLERY ===== */
+.gallery h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BOOKING ===== */
+.booking h2 {
+  margin-bottom: 20px;
+}
+
+.btn-wa {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-wa:hover {
+  background: #1ebd5a;
+}
+.about {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  line-height: 1.8;
+  color: #bbb;
+}
+.info {
+  margin-top: 30px;
+}
+
+.info p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.map {
+  max-width: 900px;
+  margin: 30px auto;
+}
