@@ -418,3 +418,30 @@ footer {
 .floating-wa:hover {
   transform: scale(1.1);
 }
+.owner {
+  padding: 60px 20px;
+  background: #111;
+  color: white;
+}
+
+.owner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.owner-image img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.owner-text {
+  max-width: 500px;
+}
+
+.owner-text h3 {
+  margin: 10px 0;
+  color: gold;
+}
